@@ -238,6 +238,7 @@ ul{
     display: flex;
     flex-direction: column;
     height: 20rem;
+    gap: 2rem;
 }
 .header-container__info h1{
     color: #F3F5F6;
@@ -706,7 +707,8 @@ ul{
         padding: 0 8rem;
     }
     .header-container__info{
-        height: 25rem;
+        height: 20rem;
+        gap: 2rem;
     }
     .header-container__info h1{
         font-size: 64px;
