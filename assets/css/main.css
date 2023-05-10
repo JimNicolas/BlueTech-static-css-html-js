@@ -353,6 +353,10 @@ ul{
     border-radius: 5px;
     box-shadow: 0 0 1.9rem 0 rgba(0, 0, 0, 0.19);
 }
+.product img{
+    max-width: 280px;
+    max-height: 280px;
+}
 .product h5{
     height: 2.6em;
     line-height: 1.3em;
