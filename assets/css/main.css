@@ -1,13 +1,15 @@
 :root{
-    --mainColor:#1ABC9C;
-    --mainColorHover:#17a78a;
-    --darkColor:#101820;
-    --buttonColor:#232323;
-    --grayColor:#686868;
-    --lightColor:#F3F5F6;
-    --backgroundColor:#354A5F;
+    --mainColor:#00FFFF;
+    --mainColorHover:#04e3e3;
+    --darkColor:#071E3D;
+    --boxProduct:#24292e;
+    --whiteColor:#FFFFFF;
+    --offerValue:#FFA500;
+    --normalValue:#87CEFA;
+    --button:#1E90FF;
+    --buttonHover:#1a7bd9;
+    --pColor:#ededed;
     --heightNav:11rem;
-    --pColor:#00ffff;
 }
 /* FUENTES GOOGLE FONTS */
 @font-face {
@@ -48,7 +50,7 @@ html {
 }
 body {
     font-family: Hind Siliguri, Helvetica, sans-serif;
-    background-color: var(--backgroundColor);
+    background: linear-gradient(89deg, rgba(2,2,2,1) 0%, rgba(2,48,76,1) 100%);
 }
 h1,h2,h3,h4,h5,h6{
     margin: 0 !important;
@@ -66,7 +68,7 @@ h4{
 }
 h5{
     font-size: 16px;
-    color: var(--pColor);
+    color: var(--whiteColor);
 }
 p{
     font-size: 16px;
@@ -168,7 +170,7 @@ ul{
     padding: 0 2rem;
 }
 .search input{
-    border: solid .5px var(--mainColor);
+    border: solid .5px #585858;
     border-radius: 5px;
     height: 4rem;
     width: 100%;
@@ -255,8 +257,8 @@ ul{
     font-size: 16px;
 }
 .shop-now{
-    background-color: var(--lightColor);
-    color: var(--mainColor);
+    background-color: var(--button);
+    color: #FFFFFF;
     font-weight: 600;
     width: max-content;
     padding: 2rem 6rem;
@@ -269,7 +271,8 @@ ul{
 
 }
 .header-button:hover{
-    background-color: rgba(255, 254, 254, 0.875);
+    color: #fcfcfc;
+    background-color: var(--buttonHover);
 }
 /* ************************* */
 /* service-info */
@@ -291,7 +294,7 @@ ul{
     gap: 2rem;
 }
 .container-icon__service{
-    background-color: var(--backgroundColor);
+    background-color: var(--darkColor);
     box-shadow: 0 0 1.9rem 0 rgba(0, 0, 0, 0.19);
     width: max-content;
     padding: 2rem;
@@ -346,7 +349,7 @@ ul{
 }
 .product{
     width: 32rem;
-    background-color: var(--darkColor);
+    background-color: var(--boxProduct);
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -383,16 +386,16 @@ ul{
 }
 .offer-value{
     font-size: 24px;
-    color: var(--mainColor);
+    color: var(--offerValue);
     font-weight: bold;
 }
-.real-value{
+.normal-value{
     font-size: 12px;
-    color: #686868;
+    color: var(--normalValue);
     text-decoration: line-through;
 }
 .add-cart{
-    background-color: var(--buttonColor);
+    background-color: var(--button);
     min-width: 10rem;
     color: #FFFFFF;
     font-weight: 600;
@@ -402,9 +405,10 @@ ul{
 }
 .add-cart:hover{
     color: #fcfcfc;
+    background-color: var(--buttonHover);
 }
 .show-more{
-    background-color: var(--mainColor);
+    background-color: var(--button);
     border: none;
     border-radius: 5px;
     height:5rem;
@@ -416,7 +420,7 @@ ul{
 }
 .show-more:hover{
     color: #fcfcfc;
-    background-color: var(--mainColorHover);
+    background-color: var(--buttonHover);
 }
 /* ********************* */
 /* Main Product */
@@ -484,7 +488,7 @@ ul{
     padding: 2rem;
 }
 .testimonials-container{
-    background-color: var(--buttonColor);
+    background-color: var(--darkColor);
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -496,7 +500,7 @@ ul{
     line-height: normal;
 }
 .testimonial-sender{
-    color: var(--lightColor);
+    color: var(--whiteColor);
 }
 /* ******************* */
 /* Product Gallery */
@@ -544,18 +548,18 @@ ul{
 .input-email{
     width: 100%;
     height: 4rem;
-    border: solid 2px var(--mainColor);
+    border: solid 2px #585858;
     border-radius: 5px;
     padding: 5px 10px;
     font-size: 16px;
-    background-color: var(--buttonColor);
-    color: var(--mainColor);
+    background-color: #e9ebed;
+    color: #000000;
 }
 .input-email:focus{
     outline: none;
 }
 .subscribe-submit{
-    background-color: var(--mainColor);
+    background-color: var(--button);
     width: 100%;
     height: 4rem;
     color: var(--lightColor);
@@ -567,7 +571,7 @@ ul{
 }
 .subscribe-submit:hover{
     color: #fcfcfc;
-    background-color: var(--mainColorHover);
+    background-color: var(--buttonHover);
 }
 
 /* FOOTER */
@@ -577,7 +581,7 @@ ul{
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    background-color: var(--buttonColor);
+    background-color: var(--darkColor);
     padding: 8rem 4rem;
     gap: 4rem;
     justify-content: space-evenly;
@@ -687,7 +691,7 @@ ul{
         box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.09);
         border-radius: 5px;
         align-items: center;
-        color: var(--buttonColor);
+        color: var(--button);
         justify-content: center;
     }
     .container-option a span:hover{
@@ -859,7 +863,6 @@ ul{
     }
     .input-email{
         height: 100%;
-        border: solid var(--mainColor) .1rem;
         padding: 1.3rem 2.3rem;
     }
     .subscribe-submit{
