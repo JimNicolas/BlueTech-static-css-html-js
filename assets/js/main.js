@@ -10,5 +10,4 @@ toggle.addEventListener('click', () => {
     navList.style.animation = 'closeNav .2s ease 0s  alternate  both';
     showNav = false;
   }
-  console.log(navList);
 });
