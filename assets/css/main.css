@@ -397,8 +397,8 @@ ul{
 }
 .add-cart{
     background-color: var(--button);
-    min-width: 10rem;
     color: #FFFFFF;
+    min-width: 10rem;
     font-weight: 600;
     padding: 1rem;
     border-radius: 5px;
@@ -644,6 +644,9 @@ ul{
         flex-direction: row;
         padding: 0 8rem;
         gap: 4rem;
+        background-color: #00000040;
+        backdrop-filter: blur(6px);
+
     }
     .logo{
         font-size: 3rem;
