@@ -231,7 +231,7 @@ ul{
     background-image: url(../../resources/header/header2.webp);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: center;
     height: 60vh;
     display: flex;
     align-items: center;
